@@ -4,7 +4,6 @@ import (
 	"database/sql"
 	"fmt"
 	"strconv"
-
 	"github.com/firmanjs/go-restfull-with-fiber/config"
 )
 

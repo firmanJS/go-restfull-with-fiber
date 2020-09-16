@@ -3,11 +3,8 @@ package handler
 import (
 	"database/sql"
 	"log"
-
 	"github.com/gofiber/fiber"
-
 	"github.com/firmanjs/go-restfull-with-fiber/model"
-
 	"github.com/firmanjs/go-restfull-with-fiber/database"
 )
 

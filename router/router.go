@@ -2,9 +2,7 @@ package router
 
 import (
 	"github.com/firmanjs/go-restfull-with-fiber/handler"
-
-	"github.com/firmanjs/go-restfull-with-fiber/middleware"
-
+	// "github.com/firmanjs/go-restfull-with-fiber/middleware"
 	"github.com/gofiber/fiber"
 )
 
@@ -12,7 +10,8 @@ import (
 func SetupRoutes(app *fiber.App) {
 
 	// Middleware
-	api := app.Group("/api", middleware.AuthReq())
+	// api := app.Group("/api", middleware.AuthReq())
+	api := app.Group("/api")
 
 	// routes
 	api.Get("/", handler.GetAllProducts)

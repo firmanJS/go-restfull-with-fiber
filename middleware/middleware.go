@@ -2,9 +2,7 @@ package middleware
 
 import (
 	"github.com/gofiber/fiber"
-
 	"github.com/gofiber/basicauth"
-
 	"github.com/firmanjs/go-restfull-with-fiber/config"
 )
 
