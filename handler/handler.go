@@ -3,9 +3,9 @@ package handler
 import (
 	"database/sql"
 	"log"
-	"github.com/gofiber/fiber"
-	"github.com/firmanjs/go-restfull-with-fiber/model"
 	"github.com/firmanjs/go-restfull-with-fiber/database"
+	"github.com/firmanjs/go-restfull-with-fiber/model"
+	"github.com/gofiber/fiber"
 )
 
 // GetAllProducts from db
@@ -44,7 +44,7 @@ func GetAllProducts(c *fiber.Ctx) {
 	// Return Products in JSON format
 	if err := c.JSON(&fiber.Map{
 		"success": true,
-		"product": result,
+		"product": result.Products,
 		"message": "All product returned successfully",
 	}); err != nil {
 		c.Status(500).JSON(&fiber.Map{
