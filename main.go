@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/gofiber/fiber" // import the fiber package
 	"log"
 	"github.com/firmanjs/go-restfull-with-fiber/database"
 	"github.com/firmanjs/go-restfull-with-fiber/router"
-	"github.com/gofiber/fiber/middleware"
+	"github.com/gofiber/fiber/v2"
+  	"github.com/gofiber/fiber/v2/middleware/logger"
 	_ "github.com/lib/pq"
 )
 
@@ -18,7 +18,7 @@ func main() { // entry point to our program
 
 	app := fiber.New() // call the New() method - used to instantiate a new Fiber App
 
-	app.Use(middleware.Logger())
+	app.Use(logger.New()
 
 	router.SetupRoutes(app)
 

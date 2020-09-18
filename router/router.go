@@ -3,7 +3,7 @@ package router
 import (
 	"github.com/firmanjs/go-restfull-with-fiber/handler"
 	// "github.com/firmanjs/go-restfull-with-fiber/middleware"
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 )
 
 // SetupRoutes func

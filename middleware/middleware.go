@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"github.com/gofiber/fiber"
-	"github.com/gofiber/basicauth"
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware"
 	"github.com/firmanjs/go-restfull-with-fiber/config"
 )
 

@@ -5,7 +5,7 @@ import (
 	"log"
 	"github.com/firmanjs/go-restfull-with-fiber/database"
 	"github.com/firmanjs/go-restfull-with-fiber/model"
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 )
 
 // GetAllProducts from db
